@@ -3,7 +3,7 @@ package astidefer
 import (
 	"sync"
 
-	astierror "github.com/asticode/go-astitools/error"
+	astierror "github.com/molotovtv/go-astitools/error"
 )
 
 // Closer is an object that can close things

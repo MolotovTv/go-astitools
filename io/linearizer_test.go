@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/asticode/go-astitools/io"
+	"github.com/molotovtv/go-astitools/io"
 	"github.com/stretchr/testify/assert"
 )
 

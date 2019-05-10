@@ -3,7 +3,7 @@ package astibyte_test
 import (
 	"testing"
 
-	"github.com/asticode/go-astitools/byte"
+	"github.com/molotovtv/go-astitools/byte"
 	"github.com/stretchr/testify/assert"
 )
 

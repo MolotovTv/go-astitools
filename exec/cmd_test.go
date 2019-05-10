@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/asticode/go-astitools/exec"
+	"github.com/molotovtv/go-astitools/exec"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/context"
 )

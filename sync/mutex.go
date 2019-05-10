@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/asticode/go-astilog"
+	"github.com/molotovtv/go-astilog"
 )
 
 // RWMutex represents a RWMutex capable of logging its actions to ease deadlock debugging

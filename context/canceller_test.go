@@ -4,7 +4,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/asticode/go-astitools/context"
+	asticontext "github.com/molotovtv/go-astitools/context"
 	"github.com/stretchr/testify/assert"
 )
 

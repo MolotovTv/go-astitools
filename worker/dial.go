@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	astilog "github.com/asticode/go-astilog"
-	astiws "github.com/asticode/go-astiws"
+	astilog "github.com/molotovtv/go-astilog"
+	astiws "github.com/molotovtv/go-astiws"
 	"github.com/pkg/errors"
 )
 

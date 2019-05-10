@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/asticode/go-astitools/io"
+	"github.com/molotovtv/go-astitools/io"
 	"github.com/pkg/errors"
 )
 

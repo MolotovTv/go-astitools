@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	astilog "github.com/asticode/go-astilog"
+	astilog "github.com/molotovtv/go-astilog"
 	"github.com/pkg/errors"
 	"golang.org/x/net/context/ctxhttp"
 )

@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/asticode/go-astitools/limiter"
+	"github.com/molotovtv/go-astitools/limiter"
 	"github.com/stretchr/testify/assert"
 )
 

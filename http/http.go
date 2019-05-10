@@ -8,7 +8,7 @@ import (
 
 	"io"
 
-	"github.com/asticode/go-astitools/io"
+	"github.com/molotovtv/go-astitools/io"
 	"github.com/pkg/errors"
 )
 

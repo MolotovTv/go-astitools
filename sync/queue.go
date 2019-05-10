@@ -5,7 +5,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/asticode/go-astitools/stat"
+	"github.com/molotovtv/go-astitools/stat"
 )
 
 // CtxQueue is a queue that can

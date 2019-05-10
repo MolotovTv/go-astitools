@@ -3,7 +3,7 @@ package astiworker
 import (
 	"math"
 
-	"github.com/asticode/go-astiamqp"
+	"github.com/molotovtv/go-astiamqp"
 	"github.com/pkg/errors"
 )
 

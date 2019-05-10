@@ -3,7 +3,7 @@ package astislice_test
 import (
 	"testing"
 
-	"github.com/asticode/go-astitools/slice"
+	"github.com/molotovtv/go-astitools/slice"
 	"github.com/stretchr/testify/assert"
 )
 
