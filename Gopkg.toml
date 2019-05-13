@@ -43,11 +43,11 @@
 
 [[constraint]]
   name = "github.com/molotovtv/go-astilog"
-  version = "1.0.0"
+  branch = "master"
 
 [[constraint]]
   name = "github.com/molotovtv/go-astiws"
-  version = "1.0.0"
+  branch = "master"
 
 [[constraint]]
   name = "github.com/pkg/errors"
