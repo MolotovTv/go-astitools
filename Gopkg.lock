@@ -52,8 +52,8 @@
 [[projects]]
   name = "github.com/mattn/go-colorable"
   packages = ["."]
-  revision = "3a70a971f94a22f2fa562ffcc7a0eb45f5daf045"
-  version = "v0.1.1"
+  revision = "8029fb3788e5a4a9c00e415f586a6d033f5d38b3"
+  version = "v0.1.2"
 
 [[projects]]
   name = "github.com/mattn/go-isatty"
@@ -68,16 +68,16 @@
   version = "v1.0.0"
 
 [[projects]]
-  branch = "master"
+  branch = "v2"
   name = "github.com/molotovtv/go-astilog"
   packages = ["."]
-  revision = "0f547a0a27d9148d52a76b9a195bcd05d4b183e9"
+  revision = "690b1fbd165bc710c64bd05001d6f8999c5ee20c"
 
 [[projects]]
   branch = "master"
   name = "github.com/molotovtv/go-astiws"
   packages = ["."]
-  revision = "23c1611a00b9a6febc7ab87845a5c74eed97a931"
+  revision = "c13d35b2dfeb5be50249ba813babce27c209e302"
 
 [[projects]]
   name = "github.com/pkg/errors"
@@ -94,8 +94,8 @@
 [[projects]]
   name = "github.com/sirupsen/logrus"
   packages = ["."]
-  revision = "8bdbc7bcc01dcbb8ec23dc8a28e332258d25251f"
-  version = "v1.4.1"
+  revision = "839c75faf7f98a33d445d181f3018b5c3409a45e"
+  version = "v1.4.2"
 
 [[projects]]
   branch = "master"
@@ -162,6 +162,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "34b69c59e2967039c69c30335c813d2d403e2259ba0015014cf28452eb02917d"
+  inputs-digest = "8b03bc478717e3af0d9fdaf1b5307759c564a53e967cd1dff63fd1648b7384b4"
   solver-name = "gps-cdcl"
   solver-version = 1
