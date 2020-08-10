@@ -33,7 +33,7 @@ type StringsMap map[string]bool
 
 // NewStringsMap creates a new StringsMap
 func NewStringsMap() StringsMap {
-	return StringsMap(make(map[string]bool))
+	return make(map[string]bool)
 }
 
 // String implements the flag.Value interface

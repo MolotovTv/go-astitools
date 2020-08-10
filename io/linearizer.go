@@ -145,5 +145,4 @@ func (l *Linearizer) Read(b []byte) (n int, err error) {
 		// Wait for 1ms
 		time.Sleep(time.Millisecond)
 	}
-	return
 }

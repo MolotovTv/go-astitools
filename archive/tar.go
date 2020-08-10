@@ -4,10 +4,8 @@ import (
 	"archive/tar"
 	"compress/gzip"
 	"context"
-	"os"
-
 	"io"
-
+	"os"
 	"path/filepath"
 
 	astiio "github.com/molotovtv/go-astitools/io"

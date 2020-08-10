@@ -64,7 +64,7 @@ func Copy(ctx context.Context, src, dst string) (err error) {
 		err = errors.Wrapf(err, "opening %s failed", src)
 		return
 	}
-	defer srcFile.Close()
+	defer func() { _ = srcFile.Close() }()
 
 	// Create the destination folder
 	if err = os.MkdirAll(filepath.Dir(dst), 0755); err != nil {
@@ -83,7 +83,7 @@ func Copy(ctx context.Context, src, dst string) (err error) {
 		err = errors.Wrapf(err, "creating %s failed", dst)
 		return
 	}
-	defer dstFile.Close()
+	defer func() { _ = dstFile.Close() }()
 
 	// Chmod using os.chmod instead of file.Chmod
 	if err = os.Chmod(dst, statSrc.Mode()); err != nil {

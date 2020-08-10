@@ -2,9 +2,8 @@ package astifloat
 
 import (
 	"bytes"
-	"strconv"
-
 	"fmt"
+	"strconv"
 
 	"github.com/pkg/errors"
 )

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/molotovtv/go-astilog"
 	"github.com/julienschmidt/httprouter"
+	"github.com/molotovtv/go-astilog"
 	"github.com/pkg/errors"
 )
 

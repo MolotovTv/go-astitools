@@ -62,7 +62,7 @@ func (d *SilenceDetector) Add(samples []int32, sampleRate int, silenceMaxAudioLe
 	// Compute audio levels
 	for i := 0; i < int(math.Floor(float64(processableSamplesCount)/float64(audioLevelAnalysisSamplesCount))); i++ {
 		// Offsets
-		start := processedSamplesCount + int(i*audioLevelAnalysisSamplesCount)
+		start := processedSamplesCount + i*audioLevelAnalysisSamplesCount
 		end := start + audioLevelAnalysisSamplesCount
 
 		// Append audio level

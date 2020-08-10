@@ -3,10 +3,9 @@ package astihttp
 import (
 	"context"
 	"fmt"
+	"io"
 	"net/http"
 	"os"
-
-	"io"
 
 	"github.com/molotovtv/go-astitools/io"
 	"github.com/pkg/errors"

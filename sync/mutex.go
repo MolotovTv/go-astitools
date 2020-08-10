@@ -93,5 +93,4 @@ func (m *RWMutex) IsDeadlocked(timeout time.Duration) (o bool, c string) {
 			return
 		}
 	}
-	return
 }

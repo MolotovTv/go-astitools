@@ -37,7 +37,7 @@ func testHamming84Decode(i uint8) (o uint8, ok bool) {
 			d1 ^= 1
 		}
 	}
-	o = uint8(d4<<3 | d3<<2 | d2<<1 | d1)
+	o = d4<<3 | d3<<2 | d2<<1 | d1
 	ok = true
 	return
 }

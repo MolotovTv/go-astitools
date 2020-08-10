@@ -2,12 +2,11 @@ package astissh
 
 import (
 	"context"
+	"fmt"
 	"io"
 	"os"
 	"path/filepath"
 	"strings"
-
-	"fmt"
 
 	"github.com/molotovtv/go-astilog"
 	"github.com/molotovtv/go-astitools/defer"
@@ -70,7 +69,7 @@ func Copy(ctx context.Context, src, dst string, fn SessionFunc) (err error) {
 		err = errors.Wrap(err, "main: creating ssh session failed")
 		return
 	}
-	defer c.Close()
+	defer func() { _ = c.Close() }()
 
 	// Create the destination folder
 	if err = s.Run("mkdir -p " + filepath.Dir(dst)); err != nil {
@@ -84,14 +83,14 @@ func Copy(ctx context.Context, src, dst string, fn SessionFunc) (err error) {
 		err = errors.Wrapf(err, "astissh: opening %s failed", src)
 		return
 	}
-	defer f.Close()
+	defer func() { _ = f.Close() }()
 
 	// Create ssh session
 	if s, c, err = fn(); err != nil {
 		err = errors.Wrap(err, "main: creating ssh session failed")
 		return
 	}
-	defer c.Close()
+	defer func() { _ = c.Close() }()
 
 	// Create stdin pipe
 	var stdin io.WriteCloser
@@ -99,7 +98,7 @@ func Copy(ctx context.Context, src, dst string, fn SessionFunc) (err error) {
 		err = errors.Wrap(err, "astissh: creating stdin pipe failed")
 		return
 	}
-	defer stdin.Close()
+	defer func() { _ = stdin.Close() }()
 
 	// Start "scp" command
 	astilog.Debugf("astissh: copying %s to %s", filepath.Base(dst), filepath.Dir(dst))
@@ -127,7 +126,7 @@ func Copy(ctx context.Context, src, dst string, fn SessionFunc) (err error) {
 	}
 
 	// Close stdin
-	stdin.Close()
+	_ = stdin.Close()
 
 	// Wait
 	if err = s.Wait(); err != nil {

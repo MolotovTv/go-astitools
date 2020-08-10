@@ -25,12 +25,12 @@ func (r *linearizerReader) Read(b []byte) (n int, err error) {
 		err = io.EOF
 		return
 	}
-	b[0] = byte(strconv.Itoa(r.count)[0])
+	b[0] = strconv.Itoa(r.count)[0]
 	b[1] = byte('t')
 	b[2] = byte('e')
 	b[3] = byte('s')
 	b[4] = byte('t')
-	b[5] = byte(strconv.Itoa(r.count)[0])
+	b[5] = strconv.Itoa(r.count)[0]
 	n = 6
 	r.count++
 	return

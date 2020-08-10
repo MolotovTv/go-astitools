@@ -17,7 +17,7 @@ func Checksum(path string) (checksum string, err error) {
 		err = errors.Wrapf(err, "opening %s failed", path)
 		return
 	}
-	defer f.Close()
+	defer func() { _ = f.Close() }()
 
 	// Compute checksum
 	var h = sha1.New()

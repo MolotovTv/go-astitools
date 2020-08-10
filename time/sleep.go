@@ -16,5 +16,4 @@ func Sleep(ctx context.Context, d time.Duration) (err error) {
 			return
 		}
 	}
-	return
 }

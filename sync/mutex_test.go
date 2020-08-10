@@ -15,5 +15,5 @@ func TestRWMutex_IsDeadlocked(t *testing.T) {
 	m.Lock()
 	d, c := m.IsDeadlocked(time.Millisecond)
 	assert.True(t, d)
-	assert.Contains(t, c, "github.com/molotovtv/go-astitools/sync/mutex_test.go:15")
+	assert.Contains(t, c, "/sync/mutex_test.go:15")
 }

@@ -28,7 +28,7 @@ func Zip(ctx context.Context, src, dst, dstRoot string) (err error) {
 	defer zw.Close()
 
 	// Walk
-	filepath.Walk(src, func(path string, info os.FileInfo, e1 error) (e2 error) {
+	_ = filepath.Walk(src, func(path string, info os.FileInfo, e1 error) (e2 error) {
 		// Process error
 		if e1 != nil {
 			return e1

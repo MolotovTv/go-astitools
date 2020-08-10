@@ -17,10 +17,10 @@ func ReplaceAll(rgx *regexp.Regexp, src *[]byte, rpl []byte) {
 		// Update src length
 		if delta < 0 {
 			// Insert
-			(*src) = append((*src)[:start], append(make([]byte, -delta), (*src)[start:]...)...)
+			*src = append((*src)[:start], append(make([]byte, -delta), (*src)[start:]...)...)
 		} else if delta > 0 {
 			// Delete
-			(*src) = append((*src)[:start], (*src)[start+delta:]...)
+			*src = append((*src)[:start], (*src)[start+delta:]...)
 		}
 
 		// Update src content

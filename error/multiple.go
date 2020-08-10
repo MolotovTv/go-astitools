@@ -7,7 +7,7 @@ type Multiple []error
 
 // NewMultiple creates new multiple errors
 func NewMultiple(errs []error) Multiple {
-	return Multiple(errs)
+	return errs
 }
 
 // Error implements the error interface
